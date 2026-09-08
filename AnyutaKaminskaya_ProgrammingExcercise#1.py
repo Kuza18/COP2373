@@ -10,7 +10,7 @@ def buy_tick(tick_available, buyers):
         # The next few lines of code will be testing for User Error:
         # User enters a space.
         try:
-            user_input = int(input('How many tickets would you like to buy?: '))
+            user_input = int(input('Please enter how many cenima tickets you want to buy: '))
         except ValueError:
             print("ERROR: Please enter the amount of tickets you would like to buy.")
             continue
