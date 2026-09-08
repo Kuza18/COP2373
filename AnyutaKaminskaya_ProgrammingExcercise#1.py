@@ -36,7 +36,7 @@ def buy_tick(tick_available, buyers):
         # count() is called to add 1 to buyers.
         else:
             tick_available -= user_input
-            buyers = count(buyers)
+            buyers = track(buyers)
             print(f'{tick_available} cenima tickets remaining!')
 
     # When loop ends, the user is notified that they cannot buy anymore and
@@ -44,7 +44,7 @@ def buy_tick(tick_available, buyers):
     print(f'Sorry we sold out! Total Buyers: {buyers}.')
 
 # Defining count() function with parameters so buyers start off as 0
-def count(buyers):
+def track(buyers):
     # One is added to buyers each time function is called
     buyers += 1
     # The integer assigned to buyers is returned so it can be used when called.
