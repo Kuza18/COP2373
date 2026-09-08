@@ -2,7 +2,7 @@
 # Defining buy_tick() function with parameters
 # to ensure limited amount of tickets and buyers are set to 0.
 def buy_tick(tick_available, buyers):
-    print('Hurry! Only 20 cenima tickets remain! Buy up to 4 tickets at a time!')
+    print('Hurry! Only 10 cenima tickets remain! Buy up to 4 tickets at a time!')
 
     # Creating While loop so user is prompted until tickets are sold out.
     while 1 <= tick_available <= 20:
@@ -51,6 +51,6 @@ def count(buyers):
     return buyers
 
 # Calling function and assigning data to tick_available and buyer.
-buy_tick(20, 0)
+buy_tick(10, 0)
 
 
